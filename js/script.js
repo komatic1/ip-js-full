@@ -1,8 +1,9 @@
 "use strict";
 
-// interpolation
-const category = 'toys';
-console.log(`https://someurl.com/${category}/5`);
+// +, -, /, * but also we have
+// + before variable - it's type convert to Number
+console.log(4 + +'5');
+// and + as Concatenator
+console.log('we have ' + 'some text');
 
-// const result = confirm('Are you sure?');
-// console.log(result);
+// 5 % 2 = 1 because it's what we have after dividing

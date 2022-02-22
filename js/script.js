@@ -1,9 +1,21 @@
 "use strict";
 
-const cond = 13;
+/*
 
-if (cond < 12) {
-    console.log('less');
-} else {
-    console.log('bigger');
+while (num < 13) {
+    console.log(num);
+    num++;
 }
+
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
+
+do {
+    console.log(num);
+    num++;
+} while (num < 13)
+
+
+
+*/

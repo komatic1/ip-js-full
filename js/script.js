@@ -1,21 +1,32 @@
 "use strict";
 
-/*
+const numberOfFilms = +prompt('How many movies you saw list time?', '');
 
-while (num < 13) {
-    console.log(num);
-    num++;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+for (let i = 0; i < 2; i++) {
+    let a = prompt('One of the last movie?', ''),
+        b = prompt('Rate it:', '');
+        
+    if (a != null && b != null  && a != '' && b != '' && a.length < 3) {
+        personalMovieDB.movies[a] = b;
+    } else {
+        i--;
+    }
 }
 
-for (let i = 0; i < 3; i++) {
-    console.log(i);
+if (personalMovieDB.count < 10) {
+    console.log('so small quantity');
+} else if (personalMovieDB.count > 9 && personalMovieDB.count < 30) {
+    console.log('good!');
+} else {
+    console.log('perfect!!');
 }
 
-do {
-    console.log(num);
-    num++;
-} while (num < 13)
-
-
-
-*/
+console.log(personalMovieDB);

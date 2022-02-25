@@ -38,4 +38,15 @@ console.log(personalMovieDB);
  * }
  * 
  * showFirstMessage();
+ * 
  */
+const logger = function() {
+    console.log('hello');
+};
+
+logger();
+
+const lg2 = () => {
+    console.log('hello again');
+};
+lg2();

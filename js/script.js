@@ -30,23 +30,3 @@ if (personalMovieDB.count < 10) {
 }
 
 console.log(personalMovieDB);
-
-/**
- * 
- * function showFirstMessage() {
- *     console.log('Hello world!');
- * }
- * 
- * showFirstMessage();
- * 
- */
-const logger = function() {
-    console.log('hello');
-};
-
-logger();
-
-const lg2 = () => {
-    console.log('hello again');
-};
-lg2();

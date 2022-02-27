@@ -1,5 +1,41 @@
 "use strict";
 
+
+function first() {
+    //do some
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function ls(lang, callback) {
+    console.log(`Learn ${lang}`);
+    callback();
+}
+
+ls('JS', function() {
+    console.log('pass the lesson');
+});
+
+function done() {
+    console.log('v2');
+}
+
+ls('PHP', done);
+
+
+
+
+
+
+
 // console.dir() - information about element 
 // console.log(Number);
 

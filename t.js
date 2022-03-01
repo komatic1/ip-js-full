@@ -1,67 +1,33 @@
 "use strict";
 
-
-function first() {
-    //do some
-    setTimeout(function() {
-        console.log(1);
-    }, 500);
-}
-
-function second() {
-    console.log(2);
-}
-
-first();
-second();
-
-function ls(lang, callback) {
-    console.log(`Learn ${lang}`);
-    callback();
-}
-
-ls('JS', function() {
-    console.log('pass the lesson');
-});
-
-function done() {
-    console.log('v2');
-}
-
-ls('PHP', done);
-
-
-
-
-
-
-
-// console.dir() - information about element 
-// console.log(Number);
-
 /**
  * 
- * string.toUpperCase()
- * stirng.toLowerCase()
+ * object into JavaScript - it's associative an array
  * 
- * string.indexOf('tr') = index from 0 OR -1 if not found
+ * const obj = new Object();
+ * or
+ * const obj2 = {
+ *     name: 'test',
+ *     age: 40,
+ *     skills: {
+ *         programming: 'PHP, JavaSript, SQL, SIEMENS',
+ *         sport: 'Billiard'
+ *     },
+ *     test: null
+ * };
  * 
- * string = 'hello world'
- * string.slice(6, [string.length()]) - second parameter non-required
+ * delete obj2.test;
  * 
- * string.substring(6, 11) - diff from .slice() parameters CAN'T be negative
- * string.substr(6, 5) - second parameter is QUANTITY of symbols to cut
+ * for (let key in obj2) {
+ *     if (typeof(obj2[key]) === 'object') {
+ *         for (let i in obj[key]) {
+ *             console.log(obj2[key][i]);
+ *         }
+ *     } else {
+ *         console.log(`Property ${key} is ${obj2[key]}`);
+ *     }
+ * }
  * 
- */
-
-/**
- * Math.
- * 
- * num = 12.2;
- * Math.round(num) = 12
- * 
- * test = "12.2px";
- * parseInt(test) = 12
- * parseFloat(test) = 12.2
+ * 13:05 in 20
  * 
  */

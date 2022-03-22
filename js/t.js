@@ -26,4 +26,3 @@ console.log(arr);
  * pseudoarray DOESN"T have any arrays methods just the structure is similar
  * 
  */
-

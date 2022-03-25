@@ -1,28 +1,41 @@
 "use strict";
 
-// in the for ... of we can use 'break' and 'continue'; into .forEach - NOT!
+// by value
+let a = 5,
+    b = a;
+
+b = b + 5;
+
+console.log(a, b);
+
+// by ref
+const obj = {
+    a: 5,
+    b: 1
+};
+
+const copy = obj;
+copy.a = 10;
+
+console.log(obj, copy);
+
+// variables - by value
+// objects - by reference
+// make an object copy - by function
+function makeCopy(mainObj) { // it's only поверхностная copy of object
+    let objCopy = {};
+    
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+};
+
 /*
-const str = prompt('', '');
-const products = str.split(', ');
-console.log(products);
-products.sort();
-console.log(products.join('; '));
+если внутри объекта есть объект, то будет поверхностная копия
+но есть еще и глубокая копия - надо проверить, что элемент объекта не является сам объектом
 */
-const arr = [2, 13, 26, 8, 10];
-arr.sort();
-console.log(arr);
-
-function compareNum(a, b) {
-    return a - b;
-}
-
-arr.sort(compareNum);
-console.log(arr);
-
-// pseudoarrays
-/**
- * when we work with DOM elements - it's pseudoarrays
- * 
- * pseudoarray DOESN"T have any arrays methods just the structure is similar
- * 
- */
+const numbers = {a:3, b:4};
+const add = {f:10, s:13};
+console.log(Object.assign(numbers, add));
+// spread

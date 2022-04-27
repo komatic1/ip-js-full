@@ -39,3 +39,4 @@ const numbers = {a:3, b:4};
 const add = {f:10, s:13};
 console.log(Object.assign(numbers, add));
 // spread
+// (...values)
